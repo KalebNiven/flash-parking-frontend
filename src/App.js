@@ -107,9 +107,6 @@ class App extends Component {
             <div className="main">
             <img src={flashParkingLogo} alt="this is the flash parking logo" />
                     <div className="container">
-                        <div className="welcome-font">
-                            {process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
-                        </div>
                             
                         <div className="vertical-center">
 							{this.state.spotsAvailable <= 0 ? <div className="row ">
